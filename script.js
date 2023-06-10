@@ -68,3 +68,5 @@ var question = [
 //test results
 
 //save score to local storage
+
+// add start button

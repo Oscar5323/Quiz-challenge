@@ -3,27 +3,42 @@
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
+    background-color: gray;
 }
 
 .container{
-    width: 80%;
-   height: 30vh;
-   border: solid black 5px;
-    align-items: center;
+    width: 100vw;
+    height: 25vh;
+    border: solid black 5px;
+    background-color: lightsteelblue;
+    align-content: center;
     justify-content: center;
-    display: flex;
+    display: block;
+    
 
 }
 .option{
     margin: 5px;
-    border: solid 5px;
-    padding: 5px;
+    padding: 0x;
+    border: solid black 2px;
     justify-content: center;
+    width: fit-content;
+    
+}
 
+#question{
+    height: 5vh;
+    display: flex;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    
 }
 
 .score-box{
-    width: 70%;
+    width: 100vw;
     height: 25vh;
     background-color: cadetblue;
     align-items: center;
@@ -32,9 +47,11 @@
     border: solid black 5px;
     
 }
+
 #progress-bar{
     width: 100%;
     background-color: darkgray;
+    border: solid black;
 }
 
 #correct{
@@ -45,7 +62,7 @@
     line-height: 27px;
     color: whitesmoke;
     font-weight: bold;
-    border: solid black;
+    
 }
 
 #time{
@@ -56,5 +73,5 @@
     line-height: 27px;
     color: whitesmoke;
     font-weight: bold;
-    border: solid black;
 }
+

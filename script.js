@@ -58,3 +58,13 @@ var question = [
     }
 
 ]
+
+//make a loop for the questions 
+
+//check the option clicked
+
+//if wrong take time off
+
+//test results
+
+//save score to local storage

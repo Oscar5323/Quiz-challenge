@@ -17,14 +17,26 @@
     
 
 }
-.option{
+.option-container{
+    display: flex;
     margin: 5px;
-    padding: 0x;
-    border: solid black 2px;
-    justify-content: center;
-    width: fit-content;
+    width: 98vw;
+    font-size: large;
+    border: 3px solid black;
+    background-color: white;
+
     
 }
+.option-prefix{
+    padding: 5px;
+    background-color: lightblue;
+    color: cornsilk;
+}
+.option-text{
+    padding: 5px 10px;
+    background-color: white;
+}
+
 
 #question{
     height: 5vh;
@@ -48,30 +60,5 @@
     
 }
 
-#progress-bar{
-    width: 100%;
-    background-color: darkgray;
-    border: solid black;
-}
 
-#correct{
-    width: 20%;
-    height: 30px;
-    background-color: rgb(51, 51, 129);
-    text-align: center;
-    line-height: 27px;
-    color: whitesmoke;
-    font-weight: bold;
-    
-}
-
-#time{
-    width: 100%;
-    height: 30px;
-    background-color: rgb(105, 29, 29);
-    text-align: center;
-    line-height: 27px;
-    color: whitesmoke;
-    font-weight: bold;
-}
 

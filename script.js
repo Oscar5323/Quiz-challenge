@@ -1,6 +1,6 @@
 const questions = document.getElementById('question');
 const options = document.getElementsByClassName('option');
-console.log(questions);
+console.log("test");
 
 var currentquetion = {};
 var correctAnswer = true; 
@@ -60,9 +60,13 @@ var question = [
 ]
 
 //make a loop for the questions 
-
+question.forEach(questions => {
+     
+});
 //check the option clicked
-
+// array.forEach(element => {
+     
+// });
 //if wrong take time off
 
 //test results

@@ -2,7 +2,7 @@ const questions = document.getElementById('question');
 const options = document.getElementsByClassName('option-text');
 
 
-var currentquestion = 0;
+var currentquestion = {};
 var questionCounter = 0;
 var score = 0;
 var availableQuestion = []
@@ -77,6 +77,15 @@ function getquestion(){
     currentquestion = availableQuestion[questionI];
     question.innerText = currentquestion.question;
 }
+
+question.forEach(option => {
+    const choice = option.dataset["choice"];
+    choice.innerText = currentquestion["question" + choice];
+});
+
+
+
+
 startQuiz()
 
 //if wrong take time off

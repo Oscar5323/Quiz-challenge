@@ -1,9 +1,13 @@
 const questions = document.getElementById('question');
-const options = document.getElementsByClassName('option');
-console.log("test");
+const options = document.getElementsByClassName('option-text');
 
-var currentquetion = {};
-var correctAnswer = true; 
+
+var currentquestion = 0;
+var questionCounter = 0;
+var score = 0;
+var availableQuestion = []
+
+var timer = 60;
 
 var question = [
 
@@ -59,14 +63,22 @@ var question = [
 
 ]
 
-//make a loop for the questions 
-question.forEach(questions => {
-     
-});
-//check the option clicked
-// array.forEach(element => {
-     
-// });
+function startQuiz (){
+    questionCounter= 0;
+    score = 0;
+    availableQuestion = [question];
+    console.log (availableQuestion);
+    getquestion();
+}
+
+function getquestion(){
+    questionCounter++;
+    const questionI = Math.floor(Math.random() * availableQuestion.length);
+    currentquestion = availableQuestion[questionI];
+    question.innerText = currentquestion.question;
+}
+startQuiz()
+
 //if wrong take time off
 
 //test results
